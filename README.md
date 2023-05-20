@@ -1,1 +1,1 @@
-# -DIABETES-PREDICTOR
+# diabectics-prediction-end-to-end-model

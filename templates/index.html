@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <span class="border border-dark"></span>
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <h1>Diabectics  prediction website</h1>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Made by <cite title="Source Title"><strong>TEAM 3</strong></cite>
+    </figcaption>
+  </figure>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Navigation Bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+  </ul>
+</nav>
+<br>
+
+
+
+<div class="container">
+  <!--<img align="middle" src="https://image.freepik.com/free-vector/by-my-car-illustration-concept_114360-870.jpg"> -->
+  <h2>Enter your details below</h2>
+  <p style="font-style: italic;">To know your diabectic status</p>
+
+    <!-- User Input Form-->
+    <form action="/" method="POST">
+        <div class="form-group">
+          <label for="Pregnacies">Pregnacies</label>
+          <input type="number" step="0.01" class="form-control" placeholder="number of Pregnacies" id="Pregnacies"
+            name="Pregnacies" required><br>
+  
+          <label for="Glucose level">Glucose:</label>
+          <input type="number" step="0.01" class="form-control" placeholder="Glucose" id="Glucose" name="Glucose"
+            required><br>
+  
+          <label for="blood pressure">bloodpressure:</label>
+          <input type="number" step="0.01" class="form-control" placeholder="bloodpressure" id="bloodpressure"
+            name="bloodpressure" required><br>
+  
+          <label for="Skinthickness">Skinthickness</label>
+          <input type="number" step="0.01" class="form-control" placeholder="Skinthickness" id="Skinthickness"
+            name="Skinthickness" required><br>
+  
+          <label for="insulin">insulin</label>
+          <input type="number" step="0.01" class="form-control" placeholder="insulin" id="insulin" name="insulin"
+            required><br>
+  
+          <label for="bmi">bmi</label>
+          <input type="number" step="0.01" class="form-control" placeholder="bmi" id="bmi" name="bmi" required><br>
+  
+          <label for="diabecticspedreefunction">diabecticspedreefunction</label>
+          <input type="number" step="0.01" class="form-control" placeholder="diabecticspedreefunction"
+            id="diabecticspedreefunction" name="diabecticspedreefunction" required><br>
+  
+          <label for="Age">age</label>
+          <input type="number" step="0.01" class="form-control" placeholder="age" id="age" name="age" required><br>
+  
+            <div class="button-group" style="margin-top:15px;"><br>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- After Prediction -->
+
+<div class="container">
+  <h2></h2>
+  <div class="alert alert-info" role="alert">
+    <strong></strong> Prediction of your diabectic status : {{output}}
+  </div>
+</div>
+
+
+  
+</body>
+</html>
